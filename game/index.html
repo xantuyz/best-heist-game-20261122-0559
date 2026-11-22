@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>CUTGLASS — Steal the Prism. Read the Patrols.</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #07090c; }
+  #wrap { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  #game { display: block; width: min(100vw, 177.78vh); height: min(100vh, 56.25vw); touch-action: none; cursor: crosshair; }
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720" aria-label="CUTGLASS: steal the Heart Prism from the gallery and return to the service dock without filling the alarm meter"></canvas>
+</div>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
